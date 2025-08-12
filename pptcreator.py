@@ -184,4 +184,3 @@ def pptcreate(excel,ppt,out,sninput):
     
     except:  # noqa: E722
         print("Unable to add all speaker notes ")
-# pptcreate(excel,ppt,out,sninput)

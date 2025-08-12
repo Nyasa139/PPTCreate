@@ -1,7 +1,7 @@
 
 from pptx import Presentation
 import pandas as pd 
-pptfile=r"C:\Users\Siddharth Bhat\Downloads\Layout_MUJ_V10.pptx"
+pptfile=r"Sample_Layout.pptx"
 
 """
 Analyzes master slides in a PowerPoint presentation and saves the details to an Excel file.
@@ -19,11 +19,7 @@ except Exception as e:
 data = []
 
 for i,layout in enumerate(prs.slide_layouts):
-  # print(f"Layout number :{i}, layout name :{layout.name}")
   for shape in layout.placeholders:
-    # print(f"Shape Type: {shape.placeholder_format.type}")
-    # print(f"Shape Name: {shape.name}")
-    # print("")
     text = ""
     if hasattr(shape, "text"):
       text = shape.text
@@ -40,7 +36,7 @@ for i,layout in enumerate(prs.slide_layouts):
 if data:
   df = pd.DataFrame(data)
   try:
-    df.to_excel(r"C:\Users\Siddharth Bhat\Downloads\layout_shapes.xlsx", index=False)
+    df.to_excel(r"layout_shapes.xlsx", index=False)
     print("Successfully saved master slide data to layouts_shape.xlsx")
   except Exception as e:
     print(f"Error saving data to Excel file: {e}")

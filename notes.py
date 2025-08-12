@@ -36,13 +36,3 @@ def snaddition(path,text,idx):
 
     # Save the presentation
     prs.save(path)
-
-# input=r"C:\Users\Siddharth Bhat\Downloads\Unit 2.2 Fundamental Rights.pptx"
-# output=r'C:\Users\Siddharth Bhat\Downloads\finout.pptx'
-# notel=snextraction(input)
-# counter=0
-# notel.pop(0)
-# for i in notel:
-#     snaddition(output,i,counter)
-#     counter+=1
-# print("✅Notes for slides added")

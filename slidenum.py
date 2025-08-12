@@ -1,4 +1,3 @@
-# prompt: From the excel sheet count the number of 'Text Placeholder 2' in shape name per layout and return a dictionary
 
 import pandas as pd
 import random
@@ -15,8 +14,6 @@ def count_placeholders_per_layout(excel_file):
         dict: A dictionary where keys are layout names and values are
               the counts of 'Text Placeholder 2' shapes in that layout.
     """
-    # Assuming the Excel file has a column named 'Layout' and a column named 'Shape Name'
-    # You might need to adjust the sheet_name and column names based on your Excel file structure.
     try:
         df = pd.read_excel(excel_file)
     except FileNotFoundError:
@@ -122,9 +119,3 @@ def get_titleindices(excel_file, chosen_layout):
   shape_indices = placeholder2_df['Shape idx'].tolist()
 
   return shape_indices
-
-
-# print(count_placeholders_per_layout(r'C:\Users\Siddharth Bhat\Downloads\layout_shapes.xlsx'))
-
-# a=slidenum(1)
-# print(a)

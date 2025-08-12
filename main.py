@@ -1,6 +1,6 @@
 
 import os
-import shutil  # noqa: F401
+import shutil  
 from pptx import Presentation
 from pptcreator import pptcreate  # Ensure pptcreator.py is in the same directory or installed as a module
 import streamlit as st
@@ -20,7 +20,7 @@ if not CLIENT_ID or not TENANT_ID:
 
 app = PublicClientApplication(CLIENT_ID, authority=AUTHORITY)
 
-fold={"Inp":"D:\MUJ SID Program\Input","OUT":"D:\MUJ SID Program\Output","arch":"D:\MUJ SID Program\Input\Archives","lay":["D:\MUJ SID Program\Templates\Layout_MUJ_V10.pptx"],"xlsx":"D:\MUJ SID Program\XLS\layout_shapes.xlsx"}
+fold={"Inp":"Input folder path","OUT":"Output folder path","arch":"Archives folder path","lay":["Sample_Layout.pptx"],"xlsx":"layout_shapes.xlsx"}
 class AuthManager:
     def __init__(self, flow=None):
         self.flow = flow

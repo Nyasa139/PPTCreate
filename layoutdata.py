@@ -47,4 +47,4 @@ def analyze_ppt(ppt_path, excel_path):
     
     
     
-analyze_ppt(r"C:\Users\Siddharth Bhat\Downloads\Layout_MUJ_V10.pptx", r'C:\Users\Siddharth Bhat\Downloads\layout_data.xlsx')
+analyze_ppt("layout_template.pptx", 'layout_data.xlsx')

@@ -101,7 +101,6 @@ def extractdata(inputfile):
               if text_frame.text:
                 speaker_notes[j+1]['header'] = text_frame.text.split("\n")[0]
                 header_found = True  # noqa: F841
-                #speaker_notes[j+1]['text'] = "\n".join(text_frame.text.split("\n")[1:]).strip()
                 break
 
 
