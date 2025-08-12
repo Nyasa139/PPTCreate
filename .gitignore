@@ -1,0 +1,7 @@
+.env
+*.pyc
+__pycache__/
+*.pptx
+*.xlsx
+token_cache.json   # in case you use MSAL cache persistence
+local_test_data/   # any sample input/output files
