@@ -66,7 +66,7 @@ You can use pptcreator.py directly in your own Python scripts or notebooks:
 from pptcreator import pptcreate
 pptcreate(
     excel="layout_shapes.xlsx",
-    ppt="Layout_MUJ_V9.pptx",
+    ppt="Sample_Layout.pptx",
     out="OUTPUT_MyPresentation.pptx",
     sninput="Unit_SampleNotes.pptx"
 )</pre>
